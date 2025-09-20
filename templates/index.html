@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css" media="screen">
+    <link rel="shortcut icon" href="../static/xicara-de-cafe.ico" type="image/x-icon">
+    <title>Contação de Histórias</title>
+</head>
+<body>
+    <header>
+        <!-- <section>
+            <article>
+                <h1>Pós Médio</h1>
+                <h1>Contação de Histórias</h1>  
+            </article>
+        </section> -->
+    </header>
+    <main>
+        <section>
+            <article>
+            <p><a href="/visitante">Avaliar como Convidado</a></p>
+
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <div>{{ message }}</div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+
+            <br>
+
+            <form action="/notaalu" method="post">
+                <div>
+                    <label for="#">Turma</label>
+
+                    <input type="radio" name="turma" id="iturma"  required value="3° 'A'">
+                    <label for="iturma">3° "A"</label>
+                    <input type="radio" name="turma" id="iturma2"  required value="3° 'B'">
+                    <label for="iturma">3° "B"</label>
+                </div>
+
+                <div>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome"  required minlength="10" maxlength="50">
+                </div>
+
+                <div>
+                    <label for="inota">Nota</label>
+                    <input type="range" name="nota" id="inota" max="10" required>
+                </div>
+
+                <div class="botao">
+                    <input type="submit" value="Avaliar">
+                </div>
+            </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Criado por <a href="/redgit" target="_blank">Wesley Xavier</a></p>
+    </footer>
+</body>
+</html>
