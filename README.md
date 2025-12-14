@@ -4,3 +4,4 @@
 <img width="608" height="912" alt="Captura de tela 2025-12-14 184214" src="https://github.com/user-attachments/assets/477e161d-6f40-4a95-8220-cb8d3e0bae51" />
 <h2>Área de votação para Convidados</h2>
 <img width="609" height="912" alt="Captura de tela 2025-12-14 184301" src="https://github.com/user-attachments/assets/270ae90a-5496-4b11-b390-3c870c592798" />
+<p><strong>Link: https://wyeels.github.io/contacaoDeHistoria/templates/</strong> <br> Lembro que os textos de confirmação de votos aparecerá na sua tela pois o github não possui compatibilidade com outras tecnologias além de HTML, CSS e JS. </p>
